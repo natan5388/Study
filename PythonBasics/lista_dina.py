@@ -9,3 +9,9 @@ os.system("cls")
 new_car = input('Add um modelo a lista: ')
 carros.append(new_car)      # Metodo append() adicona ao final da lista
 print(carros)
+# Agora será removido 1 elemento da lista
+os.system("cls")
+i = int(input('Diga a posição do elemento a ser removido:"Obs cotando a partir do 0" '))
+removido = carros.pop(i)
+print(carros)
+print('O elemento removido foi: ', removido)
