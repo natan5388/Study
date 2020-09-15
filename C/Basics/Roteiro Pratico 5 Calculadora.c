@@ -23,40 +23,38 @@ void telaprincipal(){
     printf("|                     5-Encerrar                      |\n");
     printf("|-----------------------------------------------------|\n");
     printf("|                     Digite abaixo                   |\n");
+    printf("|-----------------------------------------------------|\n");
     printf(">>  ");
-
     scanf("%d",&ope);
 }
-    //Entrada de valores
-    void entradas(){
-        printf("Informe o primeiro numero\n");
-        scanf("%d",&num1);
-        printf("Informe o segundo numero\n");
-        scanf("%d",&num2);
+//Entrada de valores
+void entradas(){
+    printf("Informe o primeiro numero\n");
+    scanf("%d",&num1);
+    printf("Informe o segundo numero\n");
+    scanf("%d",&num2);
+}
+//processamento das operações
+void processamento() {
+    if(ope == 1) { //operação de soma
+        res = num1 + num2 ;
     }
-    //processamento das operações
-    void processamento() {
-        
-        if(ope == 1) { //operação de soma
-            res = num1 + num2 ;
-            }
-        if(ope == 2) { //operação de subtração
-            res = num1 - num2 ;
-            }
-        if(ope == 3)  { //operação de multiplicação
-            res = num1 * num2 ;
-            }
-        if(ope == 4)  { //operação de divisão
-            if(num2 ==0) return;
-            res = (float) num1 / num2 ;
-            }
-        
+    if(ope == 2) { //operação de subtração
+        res = num1 - num2 ;
     }
-    //Saida do resultado
-    void saida() {
-        printf("O Resultado e: %f\n", res);
+    if(ope == 3)  { //operação de multiplicação
+        res = (float) num1 * num2 ;
     }
-
+    if(ope == 4)  { //operação de divisão
+        if(num2 ==0) return;
+        res = (float) num1 / num2 ;
+    }
+}
+//Saida do resultado
+void saida() {
+    printf("O Resultado e: %f\n", res);
+}
+//Main exec
 int main () {
     do {
     telaprincipal();
@@ -92,7 +90,6 @@ int main () {
             system("Pause");
             system("cls");
         }
-    
     }    
 while(ope != 5);
 }
