@@ -2,14 +2,14 @@
  * Arquivo: Aula 1.c
  * Data: Monday, 25th May 2020 8:40:46 am
  * Autor: Natan De Moraes Borges (123matheusmoraes321@gmail.com)
- * Descrição: Breve estudo a matrizes com dimensão fixa e flexivel
+ * Descrição: Breve estudo a matrizes com dimensão fixa e flexivel agora somando duas e printando
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
 int i,j,valor;
-int mat1[3][3],mat2[3][3],mat3[3][3];
+int mat1[3][3],mat2[3][3];
 
 int main(){
     printf("Informe os valores da matriz\n");
