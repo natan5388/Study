@@ -10,23 +10,22 @@ def entra():
     num1 = int(input('Qual primeiro numero?\n>>>'))
     num2 = int(input('Qual primeiro numero?\n>>>'))
     num3 = int(input('Qual primeiro numero?\n>>>'))
-    return(num1,num2,num3)
+    numeros = [num1, num2, num3]
+    return numeros
 
-def maior():
-    num1, num2, num3 = entra()
-    numeros = [num1,num2,num3]
+def maior(numeros):
     numeros.sort()
     print(f'O {numeros[0]} é o menor')
     print(f'O {numeros[2]} é o maior')
 
-def media():
-    num1, num2, num3 = entra()
-    res = num1 + num2 + num3
+def media(numeros):
+    res = sum(numeros)
     print(f'\nA some é {res}')
     print(f'A media é: {res/3}')
 
-maior()
+numeros = entra()
+maior(numeros)
 input('Digite qualquer tecla pra continuar')
 os.system("cls")
-media()
+media(numeros)
 print('Fim da execução')
