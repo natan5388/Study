@@ -9,6 +9,7 @@
     height: 80px;
     outline: black;
     outline-style: groove;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .menu{
     text-align: right;
@@ -21,6 +22,7 @@
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color:  #00ffff;
 }
 .corpo{
     border: 1px solid #000000;
@@ -45,11 +47,13 @@
     font-size: 70%;
 }
 .subCenter{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: blue;
     text-align: center;
     font-size: 150%;
 }
 .subLeft{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: blue;
     text-align: left;
     font-size: 150%;
@@ -64,6 +68,9 @@ form{
 input{
     float: right;
 }
+select{
+    margin-left: 18%;
+}
 fieldset{
-    width: 40%;
+    width: 43%;
 }
