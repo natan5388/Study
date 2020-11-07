@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <!--
+    Arquivo: orientador.html
+    Data: Saturday, 7th November 2020 4:58 pm
+    Autor: Natan De Moraes Borges (natanmoraes5388@gmail.com)
+    Descrição: pagina referente ao cadastro de orientador
+    -->
+<link rel="stylesheet" type="text/css" href="./style.css">
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de orientador - TCC</title>
+    </head>
+    <body>
+        <!---Cabeçalho--->
+        <div class="head">
+            Cadastro de Orientador
+        </div>
+        <!---Menu de Contexto/ Navegação--->
+        <div class="menu">
+            <a href="./escrita.html"> Estrutura de Escrita </a>
+            </div><div class="menu">
+                <a href="./orientacoes.html"> Orientações </a> 
+            </div><div class="menu">
+                <a href="./tcc.html"> TCC </a>        
+            </div><div class="menu">
+                <a href="./index.html"> Home </a>
+            </div><div class="menu">    
+                <a href="./alunos.html"> Alunos </a>
+            <br>
+        </div>
+        <br><br>
+        <!---Corpo e Subtitulo--->
+        <div class="corpo">
+            <div class="subLeft">
+                Dados do Orientador
+                <div class="asideR">
+                    <img aling="middle" src="./tcc.png"  alt="tcc" width="100px" height="60px">
+                </div>
+                <br><br>
+                <hr color="#03d3fc" size="2px" width="90%">
+                <br><br>               
+            </div>
+            <!---Entrada de formulario--->
+            <div class="formu">
+                <fieldset>
+                    <legend>Cadastre-se Aqui</legend>
+                    <form>
+                        <label for="matri_tutor">Matricula: </label><input type="text" size="50" id="matri_tutor" name="Matricula tutor"><br><br>
+                        <label for="orientador">Orientador: </label><input type="text" size="50" id="orientador" name="Orientador"><br><br>
+                        <label for="curso">Curso: </label><input type="text" size="50" id="curso" name="Curso"><br><br>
+                        <label for="titulação">Titulação: </label>
+                        <select name="titulação" id="titulação">
+                            <option value="doutorado">Doutorado</option>
+                            <option value="mestrado">Mestrado</option>
+                            <option value="bacharel">Bacharel</option>
+                        </select>
+                        <br><br>
+                        <label for="area_conh">Area do Conhecimento:</label><input type="text" size="50" id="area_conh" name="area do conhecimento"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </fieldset>
+                <br><br>
+                <hr color="#03d3fc" size="2px" width="90%">
+                <br><br>  
+            </div>
+        </div>
+        <div class="rodap">
+            <!---Rodapé da pagina--->
+            <p>Sistema de Gerenciamento de Tese de Conclusão de Curso - TCC</p>
+            <p>Teresina 29/10/2020</p>
+            <p>Pagina feita por: natanmoraes5388@gmail.com</p>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </body>
+</html>
