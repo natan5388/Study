@@ -7,6 +7,8 @@
     -->
 <link rel="stylesheet" type="text/css" href="./style.css">
 <html lang="pt-br">
+    <style>
+    </style>
     <head>
         <meta charset="utf-8">
         <title>Cadastro de orientador - TCC</title>
@@ -18,11 +20,11 @@
         </div>
         <!---Menu de Contexto/ Navegação--->
         <div class="menu">
-            <a href="./escrita.html"> Estrutura de Escrita </a>
+                <a href="./acompanhamento.html"> Acompanhamento </a> 
             </div><div class="menu">
-                <a href="./orientacoes.html"> Orientações </a> 
+                <a href="./tcc.html"> Estrutura de Escrita </a>        
             </div><div class="menu">
-                <a href="./tcc.html"> TCC </a>        
+                <a href="./tema_tcc.html">Cad Tema TCC </a>        
             </div><div class="menu">
                 <a href="./index.html"> Home </a>
             </div><div class="menu">    
@@ -39,16 +41,16 @@
                 </div>
                 <br><br>
                 <hr color="#03d3fc" size="2px" width="90%">
-                <br><br>               
+                <br>              
             </div>
             <!---Entrada de formulario--->
             <div class="formu">
                 <fieldset>
                     <legend>Cadastre-se Aqui</legend>
                     <form>
-                        <label for="matri_tutor">Matricula: </label><input type="text" size="50" id="matri_tutor" name="Matricula tutor"><br><br>
-                        <label for="orientador">Orientador: </label><input type="text" size="50" id="orientador" name="Orientador"><br><br>
-                        <label for="curso">Curso: </label><input type="text" size="50" id="curso" name="Curso"><br><br>
+                        <label for="matri_tutor">Matricula: </label><div class="direita"><input type="text" size="50" id="matri_tutor" name="Matricula tutor"></div><br><br>
+                        <label for="orientador">Orientador: </label><div class="direita"><input type="text" size="50" id="orientador" name="Orientador"></div><br><br>
+                        <label for="curso">Curso: </label><div class="direita"><input type="text" size="50" id="curso" name="Curso"></div><br><br>
                         <label for="titulação">Titulação: </label>
                         <select name="titulação" id="titulação">
                             <option value="doutorado">Doutorado</option>
@@ -56,8 +58,8 @@
                             <option value="bacharel">Bacharel</option>
                         </select>
                         <br><br>
-                        <label for="area_conh">Area do Conhecimento:</label><input type="text" size="50" id="area_conh" name="area do conhecimento"><br><br>
-                        <input type="submit" value="Submit">
+                        <label for="area_conh">Area do Conhecimento:</label><div class="direita"><input type="text" size="50" id="area_conh" name="area do conhecimento"></div><br><br>
+                        <input type="submit" value="Enviar">
                     </form>
                 </fieldset>
                 <br><br>
@@ -65,6 +67,7 @@
                 <br><br>  
             </div>
         </div>
+        <!---Area Reservada a resposta do banco de dados--->
         <div class="rodap">
             <!---Rodapé da pagina--->
             <p>Sistema de Gerenciamento de Tese de Conclusão de Curso - TCC</p>
