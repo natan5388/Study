@@ -65,7 +65,7 @@
 form{
     margin: 5px;
 }
-input{
+.direita{
     float: right;
 }
 select{
@@ -73,4 +73,15 @@ select{
 }
 fieldset{
     width: 43%;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+textarea{
+    width: 45%;
+}
+.outline{
+    border: 1px #000000;
 }
