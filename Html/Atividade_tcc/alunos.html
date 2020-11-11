@@ -6,6 +6,8 @@ Autor: Natan De Moraes Borges (natanmoraes5388@gmail.com)
 Descrição: Parte referente ao cadastro dos alunos
 -->
 <html lang="pt-br">
+    <style>
+    </style>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="./style.css">
@@ -16,14 +18,13 @@ Descrição: Parte referente ao cadastro dos alunos
         <div class="head">
             CADASTRO DE ALUNO
         </div>
-        <br>
         <!---Menu de Contexto/ Navegação--->
         <div class="menu">
-            <a href="./escrita.html"> Estrutura de Escrita </a>
+            <a href="./acompanhamento.html"> Orientações </a> 
         </div><div class="menu">
-            <a href="./orientacoes.html"> Orientações </a> 
+            <a href="./tcc.html">Estrutura de Escrita </a>        
         </div><div class="menu">
-            <a href="./tcc.html"> TCC </a>        
+            <a href="./tema_tcc.html">Cad Tema TCC </a>        
         </div><div class="menu">
             <a href="./orientador.html"> Orientador </a>
         </div><div class="menu">    
@@ -41,23 +42,25 @@ Descrição: Parte referente ao cadastro dos alunos
             </div>
             <br>
             <hr color="#03d3fc" size="2px" width="90%">
-            <br><br>
+            <br>
             <!---Entradas do formulario--->
             <div class="formu">
                 <fieldset>
                     <legend><b>Cadastre-se Aqui</b></legend>
                     <form>
-                        <label for="nome_aluno">Nome:<a>   </a></label><input type="text" size="50" id="nome_aluno" name="nome do aluno"><br><br>
-                        <label for="matri_aluno">Matricula:<a> </a></label><input type="text" size="50" id="matri_aluno" name="matricula do aluno"><br><br>
-                        <label for="curso">Curso:<a>   </a></label><input type="text" id="curso" size="50" name="curso"><br><br>
-                        <label for="disciplina">Disciplina:<a>   </a></label><input type="text" size="50" id="matricula_aluno" name="disciplina"><br><br>
+                        <label for="nome_aluno">Nome: </label> <div class="direita"><input type="text" size="50" id="nome_aluno" name="nome do aluno"></div><br><br>
+                        <label for="matri_aluno">Matricula: </label> <div class="direita"><input type="text" size="50" id="matri_aluno" name="matricula do aluno"></div><br><br>
+                        <label for="curso">Curso: </label> <div class="direita"><input type="text" id="curso" size="50" name="curso"></div><br><br>
+                        <label for="disciplina">Disciplina: </label> <div class="direita"><input type="text" size="50" id="disciplina" name="disciplina"></div><br><br>
+                        <input type="submit" value="Enviar">
                     </form>
                 </fieldset>
                 <br>
                 <hr color="#03d3fc" size="2px" width="90%">
             </div>
+            <br><br>Conteudo<br><br><br><br> 
+            <!---Area para retorno do banco de dados--->
         </div>
-        <br><br>Conteudo<br><br><br><br> <!---Area para retorno do banco de dados--->
         <div class="rodap">
             <p>Sistema de Gerenciamento de Tese de Conclusão de Curso - TCC</p>
             <p>Teresina 29/10/2020</p>
