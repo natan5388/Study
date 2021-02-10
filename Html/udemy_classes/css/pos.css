@@ -1,0 +1,22 @@
+body{
+	background-color: #00ccff;
+}
+h1{
+	margin: 0px;
+	padding: 0px;
+}
+p{
+	width: 300px;
+}
+.relative{
+	border: 1px solid gray;
+	position: relative;   /* posicionamento relativo em relação a posição original */
+	top: -20px;   /* pode movimentar o objeto a partir do topo para cima ou baixo a depender do valor */
+	left: 30px;	  /* mesma coisa relacionada a esquerda */
+}
+#container{
+	background-color: #FFF;
+	width: 800px;
+	margin: 10px auto;
+	padding: 10px;
+}
