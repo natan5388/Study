@@ -14,6 +14,21 @@ p{
 	top: -20px;   /* pode movimentar o objeto a partir do topo para cima ou baixo a depender do valor */
 	left: 30px;	  /* mesma coisa relacionada a esquerda */
 }
+.absolute{
+	border: 1px solid gray;
+	position: absolute;
+	background: #f2f2f2;
+	right: 0px;
+	top: 0px; 
+}
+.fixed{
+	border: 1px solid red;
+	position: fixed;
+	background: #f2f2f2;
+	margin: 0px;
+	right: 35%;
+	bottom: 0px; 
+}
 #container{
 	background-color: #FFF;
 	width: 800px;
