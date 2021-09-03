@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Museu Nacional</title>
 
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="container"> <!-- inicio container -->
+			<header>
+				<div id="logo">
+					<h1><a href="">Museu Nacional</a></h1>
+				</div>
+				<!-- Barra navegação topo -->
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Exposição</a></li>
+						<li><a href="">Acervos</a></li>
+						<li><a href="">Pesquisa</a></li>
+						<li><a href="">Videos</a></li>
+						<li><a href="">Fotos</a></li>
+						<li><a href="">Contatos</a></li>
+					</ul>
+				</nav>
+				<!-- Fim Barra navegação topo -->
+			</header>
+			<!-- Area principal -->
+			<div id="conteudo">
+				<section id="capa">
+					<img src="./img/museu.png">
+				</section>
+				<section id="postagens"> <!-- Area de postagens -->
+					<article id="video">
+						<h3>Conheça o Museu: Video</h3>
+						<iframe width="310" height="170" src="https://www.youtube-nocookie.com/embed/3RPQwCxu5po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</article>
+					<article id="mapa">
+						<h3>Mapa: localização</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.205508093906!2d-43.22880341572293!3d-22.905789633491473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1630613186896!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</article>
+					<article id="exposicoes">
+						<h3>Exposições</h3>
+						<ul>
+							<li>
+								<a href="">Mumias</a>
+							</li>
+							<li>
+								<a href="">A mulher mais antiga do brasil</a>
+							</li>
+							<li>
+								<a href="">Os assustadores insetos</a>
+							</li>
+							<li>
+								<a href="">Paleoarte</a>
+							</li>
+							<li>
+								<a href="">Preguiça gigante</a>
+							</li>
+							<li>
+								<a href=""><strong>Ver Todos (65)</strong></a>
+							</li>
+						</ul>
+					</article>
+					<article id="historia">
+						<h3>200 Anos de Historia</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+						<a href=""><strong>Leia mais...</strong></a>
+					</article>
+				</section>
+			</div><!-- Fim Area principal -->
+			<!-- Area Lateral -->
+			<aside>
+				<section id="depoimento">
+					<img src="./img/depoimento.png">
+				</section>
+				<section id="visita">
+					<h4>Faça uma visita</h4>
+					<form>
+						<fieldset>
+							<legend>Selecione uma data</legend>
+							<label for="data">Data</label>
+							<input class="campo" type="text" id="data" value="dd/mm/aaaa" style="width: 90px;">
+							<label for="qtd">Qtd pessoas</label>
+							<input class="campo" type="text" id="qtd" value="1" style="width: 30px;">
+						</fieldset>
+						<input class="botao" type="submit" value="verificar-disponibilidade">
+					</form>
+				</section><!-- Fim da section visita -->
+				<section id="galeria">
+					<h4>Galeria de Fotos</h4>
+					<a href="">
+						<img src="./img/imagem1.jpg">
+					</a>
+					<a href="">
+						<img src="./img/imagem2.jpg">
+					</a>
+					<a href="">
+						<img src="./img/imagem3.jpg">
+					</a>
+					<a href="">
+						<img src="./img/imagem4.jpg">
+					</a>
+				</section>
+			</aside><!-- Fim Area lateral -->
+			<div style="clear: both;"></div>
+			<footer>
+				<p>
+					<a href="">Home</a>
+					<a href="">Exposição</a>
+					<a href="">Acervos</a>
+					<a href="">Pesquisa</a>
+					<a href="">Videos</a>
+					<a href="">Fotos</a>
+					<a href="">Contatos</a>
+				</p>
+				<p>2019 Museu Nacional - Todos os direitos reservados</p>
+			</footer>
+		</div><!-- Fim container -->
+	</body>
+</html>
