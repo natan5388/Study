@@ -72,7 +72,7 @@ Dados * criar(Dados *raiz){
 }
 
 int inserir(Dados *arvore, int contador, int vazio , int num){
-   Dados *pai = arvore, *aux;
+   Dados *pai = arvore;
    //Primeiro checa se é maior ou menor e desvia e verifica conteudo
    if (vazio == 1)               //Condição de saida da recursão
    {
@@ -80,31 +80,37 @@ int inserir(Dados *arvore, int contador, int vazio , int num){
       return 1; 
    } else {
       if (num < pai->num){          //caso menor que
-         aux = pai->esquerda;
-         if (aux == NULL){
+         if (pai->esquerda == NULL){
             vazio = 1;              //Define a "flag" para sair do loop
             //Codigo de inserção
             Dados *novo = malloc(sizeof(Dados));
             novo->num = num;
             novo->nivel = contador;
+            novo->direita = NULL;
+            novo->esquerda = NULL;
             pai->esquerda = novo;
-            pai->direita = NULL;
-         }      
+         }  
+         pai = pai->esquerda;       //Desvia de para esquerda se menor  
       } 
       if (num > pai->num){          //Caso maior que   
-         aux = pai->direita;
-         if (aux == NULL){
+         if (pai->direita == NULL){
             vazio = 1;              //Define a "flag" para sair do loop
             //Codigo de inserção
             Dados *novo = malloc(sizeof(Dados));
             novo->num = num;
             novo->nivel = contador;
-            pai->esquerda = NULL;
+            novo->direita = NULL;
+            novo->esquerda = NULL;
             pai->direita = novo;
-         }  
+         }
+         pai = pai->direita;        //Devia de para direita se maior
+      }
+      if (num == pai->num){                           //Se o numero já existir na arvore ele avisao e sai da função
+         printf("Esse numero ja existe na arvore, tente outro!\n");
+         return 1;
       }
       contador++;
-      inserir(aux, contador, vazio, num);            //Chamada Recursiva
+      inserir(pai, contador, vazio, num);             //Chamada Recursiva
    }
 }
 
